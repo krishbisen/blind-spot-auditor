@@ -1,0 +1,102 @@
+{
+  "patient": {
+    "id": "patient-001",
+    "name": "Priya Sharma",
+    "age": 34,
+    "gender": "female",
+    "bloodType": "O+"
+  },
+
+  "current_diagnosis": {
+    "condition": "Major Depressive Disorder (MDD)",
+    "icd_code": "F32.1",
+    "diagnosed_by": "Dr. R. Mehta",
+    "diagnosed_date": "2023-08-15",
+    "duration_months": 18,
+    "current_medications": [
+      "Escitalopram 10mg daily",
+      "Clonazepam 0.5mg as needed"
+    ]
+  },
+
+  "symptoms_at_diagnosis": [
+    "Persistent fatigue",
+    "Low mood",
+    "Difficulty concentrating",
+    "Weight gain (8kg over 6 months)",
+    "Sleep disturbance"
+  ],
+
+  "lab_results": [
+    {
+      "test": "TSH (Thyroid Stimulating Hormone)",
+      "value": 4.8,
+      "unit": "mIU/L",
+      "normal_range": "0.4 - 4.0",
+      "status": "BORDERLINE HIGH",
+      "date": "2023-07-20",
+      "note": "Ordered but result not followed up"
+    },
+    {
+      "test": "Free T4",
+      "value": "NOT ORDERED",
+      "note": "Was not ordered at initial workup"
+    },
+    {
+      "test": "Complete Blood Count",
+      "value": "Mild normocytic anemia",
+      "status": "ABNORMAL",
+      "date": "2023-07-20"
+    },
+    {
+      "test": "Serum Ferritin",
+      "value": 9,
+      "unit": "ng/mL",
+      "normal_range": "12 - 150",
+      "status": "LOW",
+      "date": "2023-07-20"
+    },
+    {
+      "test": "Cholesterol",
+      "value": 224,
+      "unit": "mg/dL",
+      "normal_range": "< 200",
+      "status": "ELEVATED",
+      "date": "2024-01-10",
+      "note": "Patient has no cardiac risk factors — unexplained elevation"
+    }
+  ],
+
+  "visit_notes": [
+    {
+      "date": "2023-09-10",
+      "note": "Patient reports continued fatigue despite 4 weeks on escitalopram. Also mentions hair seems thinner than usual. Attributed to stress."
+    },
+    {
+      "date": "2023-11-22",
+      "note": "Patient says she feels cold all the time even in warm rooms. Husband reports she has become more forgetful. Dose increased to 20mg."
+    },
+    {
+      "date": "2024-02-14",
+      "note": "Minimal improvement. Patient frustrated. Reports constipation as new symptom. Dry skin noted on examination. Referred to psychiatrist."
+    },
+    {
+      "date": "2024-05-08",
+      "note": "18 months on antidepressants with only partial response. Patient reports voice feels slightly hoarse. Weight still elevated."
+    }
+  ],
+
+  "family_history": [
+    "Mother: Hashimoto's thyroiditis",
+    "Maternal aunt: Hypothyroidism",
+    "Sister: Type 1 diabetes (autoimmune)"
+  ],
+
+  "allergies": ["Penicillin"],
+
+  "treatment_response": {
+    "months_on_antidepressants": 18,
+    "response_level": "Partial — less than 40% improvement",
+    "psychiatrist_note": "Treatment-resistant depression suspected. Considering augmentation therapy."
+  }
+}

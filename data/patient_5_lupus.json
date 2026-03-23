@@ -1,0 +1,70 @@
+{
+  "patient": {
+    "id": "patient-005",
+    "name": "Divya Krishnan",
+    "age": 32,
+    "gender": "female"
+  },
+  "current_diagnosis": {
+    "condition": "Fibromyalgia",
+    "icd_code": "M79.7",
+    "duration_months": 19,
+    "current_medications": [
+      "Pregabalin 75mg",
+      "Amitriptyline 10mg"
+    ],
+    "diagnosed_date": "2023-09-01"
+  },
+  "symptoms_at_diagnosis": [
+    "Widespread joint pain",
+    "Chronic fatigue",
+    "Brain fog",
+    "Sensitivity to light"
+  ],
+  "lab_results": [
+    {
+      "test": "ANA Antinuclear Antibody",
+      "value": "Positive 1:160",
+      "status": "POSITIVE ABNORMAL",
+      "note": "Positive ANA never followed up"
+    },
+    {
+      "test": "Anti-dsDNA antibody",
+      "value": "NOT ORDERED",
+      "note": "Critical lupus marker never ordered despite positive ANA"
+    },
+    {
+      "test": "ESR",
+      "value": 68,
+      "status": "HIGH"
+    },
+    {
+      "test": "CBC",
+      "value": "Mild leukopenia WBC 3.2",
+      "status": "LOW"
+    }
+  ],
+  "visit_notes": [
+    {
+      "date": "2023-10-12",
+      "note": "Butterfly rash across cheeks and nose after sun exposure. Attributed to rosacea."
+    },
+    {
+      "date": "2024-08-15",
+      "note": "Mouth ulcers recurring. Urine protein increasing. Fatigue severely limiting daily activities."
+    }
+  ],
+  "family_history": [
+    "Mother: Systemic Lupus Erythematosus SLE",
+    "Maternal aunt: Sjogrens syndrome",
+    "Sister: Autoimmune thyroid disease"
+  ],
+  "treatment_response": {
+    "response_level": "No improvement. New organ symptoms developing.",
+    "months_on_antidepressants": 19,
+    "psychiatrist_note": "Multiple new symptoms across organ systems."
+  },
+  "allergies": [
+    "None known"
+  ]
+}

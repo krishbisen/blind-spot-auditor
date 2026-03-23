@@ -1,0 +1,64 @@
+{
+  "patient": {
+    "id": "patient-003",
+    "name": "Rajesh Verma",
+    "age": 45,
+    "gender": "male"
+  },
+  "current_diagnosis": {
+    "condition": "Major Depressive Disorder",
+    "icd_code": "F32.2",
+    "duration_months": 16,
+    "current_medications": [
+      "Sertraline 100mg",
+      "Melatonin 5mg"
+    ],
+    "diagnosed_date": "2023-11-20"
+  },
+  "symptoms_at_diagnosis": [
+    "Extreme daytime fatigue",
+    "Low mood",
+    "Morning headaches",
+    "Waking unrefreshed despite 8 hours sleep"
+  ],
+  "lab_results": [
+    {
+      "test": "Blood pressure",
+      "value": "158/96",
+      "status": "HIGH"
+    },
+    {
+      "test": "Polysomnography sleep study",
+      "value": "NOT ORDERED",
+      "note": "Never ordered despite classic sleep disorder symptoms"
+    },
+    {
+      "test": "HbA1c",
+      "value": 5.9,
+      "status": "PREDIABETIC RANGE"
+    }
+  ],
+  "visit_notes": [
+    {
+      "date": "2023-12-10",
+      "note": "Wife reports patient snores loudly and stops breathing for several seconds"
+    },
+    {
+      "date": "2024-05-14",
+      "note": "Patient waking up gasping for air. Neck circumference 42cm large."
+    }
+  ],
+  "family_history": [
+    "Father: Hypertension",
+    "Brother: Obese snores heavily",
+    "No family history of depression"
+  ],
+  "treatment_response": {
+    "response_level": "No improvement in fatigue or sleep quality",
+    "months_on_antidepressants": 16,
+    "psychiatrist_note": "Fatigue persistent despite antidepressants."
+  },
+  "allergies": [
+    "None known"
+  ]
+}

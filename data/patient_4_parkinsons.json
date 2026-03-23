@@ -1,0 +1,59 @@
+{
+  "patient": {
+    "id": "patient-004",
+    "name": "Sunita Rao",
+    "age": 58,
+    "gender": "female"
+  },
+  "current_diagnosis": {
+    "condition": "Generalized Anxiety Disorder",
+    "icd_code": "F41.1",
+    "duration_months": 21,
+    "current_medications": [
+      "Alprazolam 0.5mg",
+      "Propranolol 10mg"
+    ],
+    "diagnosed_date": "2023-06-15"
+  },
+  "symptoms_at_diagnosis": [
+    "Trembling hands",
+    "Nervousness",
+    "Muscle stiffness",
+    "Fatigue"
+  ],
+  "lab_results": [
+    {
+      "test": "DaTscan dopamine transporter",
+      "value": "NOT ORDERED",
+      "note": "Key Parkinsons diagnostic test never ordered"
+    },
+    {
+      "test": "MRI Brain",
+      "value": "NOT ORDERED",
+      "note": "Neurological imaging never performed"
+    }
+  ],
+  "visit_notes": [
+    {
+      "date": "2023-08-20",
+      "note": "Handwriting has become very small and cramped \u2014 micrographia noted but not acted upon"
+    },
+    {
+      "date": "2024-02-18",
+      "note": "Loss of smell for 8 months. Tremor present at rest. Facial expression flat."
+    }
+  ],
+  "family_history": [
+    "Father: Parkinsons disease diagnosed at 62",
+    "Paternal uncle: Parkinsons disease",
+    "No family history of anxiety"
+  ],
+  "treatment_response": {
+    "response_level": "Tremors worsening despite anxiety treatment",
+    "months_on_antidepressants": 21,
+    "psychiatrist_note": "Motor symptoms unexplained. Consider neurology."
+  },
+  "allergies": [
+    "None known"
+  ]
+}

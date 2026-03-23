@@ -1,0 +1,63 @@
+{
+  "patient": {
+    "id": "patient-002",
+    "name": "Arjun Mehta",
+    "age": 28,
+    "gender": "male"
+  },
+  "current_diagnosis": {
+    "condition": "Irritable Bowel Syndrome (IBS)",
+    "icd_code": "K58.9",
+    "duration_months": 14,
+    "current_medications": [
+      "Mebeverine 135mg",
+      "Omeprazole 20mg"
+    ],
+    "diagnosed_date": "2024-01-10"
+  },
+  "symptoms_at_diagnosis": [
+    "Chronic bloating",
+    "Diarrhea and constipation",
+    "Fatigue",
+    "Weight loss 6kg"
+  ],
+  "lab_results": [
+    {
+      "test": "Vitamin D",
+      "value": 11,
+      "status": "CRITICALLY LOW"
+    },
+    {
+      "test": "tTG-IgA Celiac antibody",
+      "value": "NOT ORDERED",
+      "note": "Never ordered despite malabsorption pattern"
+    },
+    {
+      "test": "Vitamin B12",
+      "value": 185,
+      "status": "LOW"
+    }
+  ],
+  "visit_notes": [
+    {
+      "date": "2024-02-15",
+      "note": "Symptoms worse after eating bread and pasta"
+    },
+    {
+      "date": "2024-10-03",
+      "note": "Blistering rash on elbows attributed to eczema"
+    }
+  ],
+  "family_history": [
+    "Sister: Type 1 diabetes",
+    "Mother: Rheumatoid arthritis"
+  ],
+  "treatment_response": {
+    "response_level": "No improvement \u2014 symptoms worsening",
+    "months_on_antidepressants": 14,
+    "psychiatrist_note": "IBS management ineffective. Symptoms worsening."
+  },
+  "allergies": [
+    "None known"
+  ]
+}
