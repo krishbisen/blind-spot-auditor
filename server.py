@@ -31,4 +31,4 @@ def audit_patient(patient_id: str = "patient-001") -> str:
         return f"Error during audit: {str(e)}"
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="sse")
