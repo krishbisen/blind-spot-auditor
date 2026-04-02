@@ -30,7 +30,7 @@ async def audit_blind_spots(patient_id: str = "patient-001") -> str:
         return f"Error during Diagnostic Audit: {str(e)}"
 
 # ─────────────────────────────────────────────
-# TOOL 2: Medication & Interaction Safety  ← NOW SUPER CLEAR FOR YOUR QUERY
+# TOOL 2: Medication & Interaction Safety  
 # ─────────────────────────────────────────────
 @mcp.tool()
 async def check_med_safety(patient_id: str = "patient-001") -> str:

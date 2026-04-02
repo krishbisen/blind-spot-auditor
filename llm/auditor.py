@@ -28,9 +28,9 @@ RULES:
 4. Focus on identifying misdiagnoses, lab trends (like Ferritin/TSH), and safety risks.
 """
 
-# ─────────────────────────────────────────────
-# TOOLS (Updated to accept and show Patient ID)
-# ─────────────────────────────────────────────
+# ─────
+# TOOLS
+# ─────
 
 def audit_patient_blind_spots(patient_data: dict) -> str:
     chart = build_patient_context(patient_data)
