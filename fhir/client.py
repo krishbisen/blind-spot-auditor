@@ -1,31 +1,19 @@
 """
 fhir/client.py
 --------------
-Connects to the HAPI FHIR server or loads synthetic clinical datasets.
-Updated to support multiple patient profiles (001-005).
+Connects to synthetic clinical datasets (patient-001 to patient-005).
 """
-
 import requests
 import json
 import os
 
-# The free public FHIR server (for live integration)
 FHIR_BASE_URL = "https://hapi.fhir.org/baseR4"
 
 def get_full_patient_summary(patient_id: str = "patient-001", use_synthetic: bool = True) -> dict:
-    """
-    Main data orchestrator. Dynamically loads the correct JSON file 
-    from the data folder based on the patient_id.
-    """
     if not use_synthetic:
-        # Live FHIR integration (Simplified for demo)
-        return {
-            "patient": {"name": "Live FHIR Patient"},
-            "current_diagnosis": {"condition": "Unknown"},
-            "lab_results": []
-        }
+        # Live FHIR (still dummy for demo)
+        return {"patient": {"name": "Live FHIR Patient"}, "current_diagnosis": {"condition": "Unknown"}, "lab_results": []}
 
-    # Mapping IDs to your specific JSON files
     file_map = {
         "patient-001": "synthetic_patient.json",
         "patient-002": "patient_2_celiac.json",
@@ -39,16 +27,15 @@ def get_full_patient_summary(patient_id: str = "patient-001", use_synthetic: boo
     file_path = os.path.join(BASE_DIR, "data", file_name)
 
     try:
-        with open(file_path, "r") as f:
-            return json.load(f)
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        print(f"✓ Loaded synthetic data for {patient_id} from {file_name}")  # ← debug
+        return data
     except FileNotFoundError:
-        # Fallback to patient-001 if specific file is missing
+        print(f" File {file_name} not found for {patient_id} → falling back to synthetic_patient.json")
         fallback_path = os.path.join(BASE_DIR, "data", "synthetic_patient.json")
-        with open(fallback_path, "r") as f:
+        with open(fallback_path, "r", encoding="utf-8") as f:
             return json.load(f)
-
-if __name__ == "__main__":
-    print("=== FHIR Client Multi-Patient Test ===")
-    # Test loading Arjun (002)
-    data = get_full_patient_summary("patient-002")
-    print(f"✓ Successfully loaded: {data['patient']['name']} ({data['current_diagnosis']['condition']})")
+    except Exception as e:
+        print(f" Error loading patient data: {e}")
+        raise

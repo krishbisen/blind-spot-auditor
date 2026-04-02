@@ -50,7 +50,7 @@ blind-spot-auditor/
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/krishbisen/blind-spot-auditor
    cd blind-spot-auditor
    ```
 
@@ -148,7 +148,13 @@ This project was developed for the Agents Assemble Hackathon 2026. It demonstrat
 
 ## License
 
-[Add appropriate license here]
+## ⚖️ License
+
+This project is licensed under the **MIT License**.
+
+Copyright (c) 2026 Krish Bisen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
 
 ## Disclaimer
 
