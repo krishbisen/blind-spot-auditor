@@ -1,4 +1,4 @@
-# Diagnostic Blind Spot Auditor
+# Diagnostic Blind Spot Auditor....
 
 A clinical AI agent that identifies overlooked medical conditions by "red-teaming" patient diagnoses. Built for the Agents Assemble Hackathon 2026.
 
